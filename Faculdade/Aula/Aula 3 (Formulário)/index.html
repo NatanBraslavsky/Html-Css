@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Aula 3 - Formulário </title>
+ </head>
+<body>
+	<form method='post' action='lasalle.py'>
+	<fieldset>
+    <legend>Cadastro de Aluno</legend>
+    
+	<p><label>Nome:<input type='text' placeholder="Nome" required name='nome' size = 33 /></label></p>
+    
+	<p><label>Endereço:<input type='text' name='endereco' maxlength=40 size=30 placeholder='Endereço completo'/></label></p>
+    
+	<p><label>E_mail:<input type='email' name='email' required /></p></label>
+    
+	<p><label>Data_nasc:<input type='date' name='data_nasc' /></p></label>
+    
+	<p><label>Senha:<input type='password' maxlength=8 placeholder='8 digitos' required name='senha' /></p></label>
+  </fieldset>
+	<fieldset><legend>Sexo:</legend>
+	<p><label><input type='radio' name='sexo'>Feminino</input></label>
+	<label><input type='radio' name='sexo'>Masculino</input></label>
+	<label><input type='radio' name='sexo'>Outros</input></p>
+	</fieldset>
+    
+	<fieldset><legend>Area de Interesse</legend>
+	<p><label><input type='checkbox' name='interesse' checked>Lazer</input></label><p>
+	<p><label><input type='checkbox' name='interesse'>Entretenimento</input></label><p>
+	<p><label><input type='checkbox' name='interesse'>Esporte</input></label><p>
+	<p><label><input type='checkbox' name='interesse'>Tecnologia</input></label><p>
+	</fieldset>
+    
+	<p>Estado
+	<select name='estado'>
+	<optgroup label='Agrupamento'>
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AP">Amapá</option>
+		<option value="AM">Amazonas</option>
+	</optgroup>
+	<optgroup label='Agrupamento'>
+		<option value="BA">Bahia</option>
+		<option value="CE">Ceará</option>
+	</optgroup>
+		<option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+		<option value="MT">Mato Grosso</option>
+		<option value="MS">Mato Grosso do Sul</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PR">Paraná</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="RO">Rondônia</option>
+		<option value="RR">Roraima</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SP">São Paulo</option>
+		<option value="SE">Sergipe</option>
+		<option value="TO">Tocantins</option>
+		<option value="EX">Estrangeiro</option>
+	</select></p>
+    
+	<p>Comentário</p>
+	<textarea cols=40 rows=10 placeholder='Deixe o seu recado' maxlength=200></textarea>
+    
+	<p>Botões</p>
+	 <input type='submit' value="Enviar"/>
+	<input type='reset' value='Limpar' />
+	<input type='button' value='Cadastrar' />
+    
+	<p><h1>Novas Tags</h1></p>
+    
+	<p>Defina seu grau de satisfação</p>
+	<p>Pouco satisfeito<input type='range' min=0 max=10 step=5 name='satisfacao' />Muito satisfeito</p>
+    
+	<p>Upload<input type='file' name='arquivo' /></p>
+    
+	<p>Hora<input type='time' name='hora' /></p>
+    
+	<p>Data e Hora<input type='datetime-local' name='hora' /></p>
+    
+	<p>Dia da semana<input type='week' name='semana' /></p>
+    
+	<p>Escolha a cor de sua preferênciaCor<input type='color' name='cor' /></p>
+    
+	<p><h1>Cachorro</h1>
+	<input type='image' src='isolado-feliz-sorridente-cao-fundo-branco-retrato-4_1562-693.avif' width=20% /></p>
+	
+		
+		
+	
+	 <!--<label> representa uma legenda para um item em uma interface de usuário.
+       <input> É um campo para que o usuário ou usuária possa inserir algum texto, data, número, cor, etc.
+      maxlength - Limita a quantidade de caracteres que o usuario pode usar
+      placeholder - Disponibilizar ao usuário uma dica que descreve o valor esperado em um determinado campo de entrada.
+      required - Campo obrigatório
+      <fieldset>  Usada para agrupar elementos, assim como a tag <label>, dentro de um formulário web
+      <select>  Representa um controle que apresenta um menu de opções
+      <option> permite o atributo "select", que, quando marcado, deixa a opção correspondente pré-selecionada.
+      <optgroup>  cria um agrupamento de opções dentro do elemento 'select'
+      <textarea> tamanho da area do texto
+      row -  é o pai das colunas. Ela define um grupo de grids.
+      
+    
+    
+    
+    -->
+	
+	
+	
+	</fieldset>
+</form>
+</body>
+</html>

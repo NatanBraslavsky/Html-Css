@@ -1,0 +1,191 @@
+  /*body{
+	animation-name:corpo; nome da animação 
+	animation-duration:12s; tempo de duração da animação
+	animation-iteration-count:2; quantidade de vezes que a animação repete
+	background:linear-gradient(to right,#eacda3,#d6ae7b)
+}
+
+/* @keyframes corpo{
+	0%{
+        background:url('c1.jfif')no-repeat;
+    }
+	25%{
+        background:url('c2.jfif')no-repeat;
+    }
+	50%{
+        background:url('c3.jfif')no-repeat;
+    }
+	75%{
+        background:url('c4.jfif')no-repeat;
+    }
+	100%{
+        background:url('c5.jfif')no-repeat;
+    }
+} */
+
+/* --------------------------------------------------------------------- */
+
+/* #btn{
+	background:linear-gradient(to right,#eacda3,#d6ae7b);
+	border:none;
+	color:white;
+	font-family:Gabriola;
+	font-size:60px;
+	border-radius:12px;
+	cursor:pointer;
+	animation-name:botao;
+	animation-duration:2s;
+	animation-iteration-count:3
+}
+
+@keyframes botao{
+	0%{background:url('c1.jfif')no-repeat}
+	50%{background:url('c2.jfif')no-repeat}
+	100%{background:url('c3.jfif')no-repeat}
+	}
+	
+#btn:hover{
+	background:linear-gradient(to right, #ffb75e, #ed8f03);
+	color:black
+} */
+
+/*----------------------------------------------------------------*/
+
+/* #x{
+	border:1px solid black;
+	width:120px;
+	height:120px;
+	position:relative;
+	background:pink;
+	animation-name:quadrado;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-direction:normal /*reverse,alternate-reverse
+} */
+
+
+/* @keyframes quadrado{
+	0%{
+		background:violet;
+		left:0px;
+		top:0px;
+	} */
+	
+	 /* 25%{
+		background:blue;
+		left:500px;
+		top:0px
+	} */
+	
+	/*50%{
+		background:aquamarine;
+		left:100px;
+		top:0px
+	}*/
+	
+	/* 75%{
+		background:green;
+		left:800px;
+		top:0px
+	} 
+	
+	100%{
+		background:lightblue;
+		left:1500px;
+		top:0px
+	}
+} */
+	
+/*----------------------------------------------------------------*/
+
+/* .item{
+	width:100px;
+	height:100px;
+	background:orange
+}
+
+.animationFadeIn{
+	animation:fadeIn 1s infinite 
+}
+
+@keyframes fadeIn{
+	from{opacity:0}
+	to{opacity:1}
+} */
+
+/* ------------------------------------------------------------------- */
+
+/* .item1{
+	width:100px;
+	height:100px;
+	background:indigo
+}
+
+.animationFadeOut{
+	animation:fadeOut 2s linear infinite
+}
+
+@keyframes fadeOut{
+	from{opacity:1}
+	to{opacity:0}
+} */
+
+/* ------------------------------------------------------------------ */
+
+/* .item2{
+	width:100px;
+	height:100px;
+	background:aqua
+}	
+
+.animationFadeInFadeOut{
+	animation:fadeInfadeOut 8s linear infinite
+} */
+
+/* @keyframes fadeInfadeOut{
+	0%{opacity:1}
+	50%{opacity:0.2}
+	100%{opacity:1}
+} */
+
+/*-------------------------------------------------------------------*/
+
+ .item3{
+	width:100px;
+	height:100px;
+	background:yellow
+}
+
+.spinner{
+	border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animationSpinner{
+	animation:rotate 2s normal infinite
+} 
+
+ @keyframes rotate{
+	from{transform:rotateX(0deg)}/*pode-se rodar no eixo X,Y e Z*/
+	to{transform:rotateZ(360deg)}
+} 
+
+/*----------------------------------------------------------------------*/
+
+.animationSpinnerEase{
+	animation:rotate 2s ease infinite
+}
+
+/*----------------------------------------------------------------------*/
+
+.animationSpinnerEaseOut{
+	animation:rotate 2s ease-out infinite
+}
+
+/*SpinnerEaseOut - é uma função de temporização que controla animação
+ao longo do tempo;a animação acelera no inicio e desacelera a medida que 
+se aproxima do final.
+SpinnerEase - efeito de aceleração suave. A rotação começa lentamente
+acelera no meio e desacelera no final */

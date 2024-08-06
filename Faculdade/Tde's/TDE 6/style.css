@@ -1,0 +1,144 @@
+#container{
+    width: 650px;
+    height: 800px;
+    border: 2px solid #7BCA7B;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #F1FAF1;
+}
+
+#carteiro{
+    background-image: url(borboleta.png);
+    background-size: 100px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    float: left;
+}
+
+fieldset{
+    border: 1px solid #B2F1B2;
+}
+
+legend{
+    color: #34AE34;
+    border: 1px solid #B2F1B2;
+    font-weight: bold;
+}
+
+#cadastroGeral{
+    width: 500px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-bottom: 14px;
+    
+}
+
+#dadosPessoais{
+    width: 214px;
+    background-image: url(butterfly_PNG1005.png);
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: right;
+    float: left;
+    
+}
+
+#nome{
+    color: #4BB64B;
+}
+
+#inputNome{
+    border: 1px solid #99D699;
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+#profissao{
+    color: #4BB64B;
+}
+
+#profissaoSelect{
+    width: 215px;
+    border: 1px solid #99D699;
+}
+
+#localizacao{
+    width: 214px;
+    float: right;
+    background-image: url(coracao.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right bottom;
+}
+
+#email{
+    color: #4BB64B;
+}
+
+#emailInput{
+    border: 1px solid #99D699;
+    width: 210px;
+    margin-bottom: 10px;
+}
+
+#rua{
+    color: #4BB64B;
+}
+
+#ruaInput{
+    border: 1px solid #99D699;
+    width: 210px;
+}
+
+#faixaEtaria{
+    columns: 2;
+    color: #4BB64B;
+    margin-top: 144px;
+    background-image: url(pngtree-eagle-bird-transparent-on-white-background-png-image_6656458.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right bottom;
+    
+}
+
+#esportes{
+    color: #4BB64B;
+    margin-top: 14px;
+    background-image: url(tigre.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: right;
+}
+
+#comentario{
+    width: 500px;
+    margin-left: 104px;
+    background-image: url(7ed0fdc199db02ba94037cb1a7177349.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right;
+}
+
+#texto{
+    width: 300px;
+    height: 120px;
+    border: 1px solid #35AE35;
+    resize: none;
+}
+
+#comentario p{
+    margin: 0;
+    margin-top: 10px;
+    color: #35AE35;
+}
+
+#botao{
+    margin-left: 100px;
+}
+
+#botao input{
+    border: 2px solid #9ee09e;
+    margin-top: 10px;
+}

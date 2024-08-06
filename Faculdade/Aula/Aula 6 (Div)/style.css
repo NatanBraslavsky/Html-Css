@@ -1,0 +1,71 @@
+body{
+    margin:0px;
+    padding:0px
+  }
+  
+  #container{
+    width:950px;
+    margin:auto
+  }
+  
+  #header{
+    height:30px;
+    background:#818E85;
+    font-family:Verdana;
+    font-size:14pt;
+    text-align:center;
+    color:white;
+    font-weight:bold
+  }
+  
+  .nav{
+    background:#333;
+    overflow:hidden
+  }
+  
+  .nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 5px
+  }
+  
+  .nav a:hover{
+    background:#DDD;
+    color:yellow
+  }
+  
+  #left{
+    width:200px;
+    height:255px;
+    background-image:url('cahorro1.jfif');
+    background-repeat:no-repeat;
+    background-size:30%;
+    background-position:top right;
+    float:left;
+    }
+  
+  #content{
+    width:500px;
+    height:255px;
+    color:#DDAABB;
+    text-align:justify;
+    display:inline-block;
+    padding-top:10px
+  }
+  
+  #right{
+    width:190px;
+    height:255px;
+    float:right
+  }
+  
+  #footer{
+    height:30px;
+    background:#818E85;
+    font-family:Verdana;
+    font-size:8pt;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    padding-top:10px
+  }

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --cor-principal: #F2A20C;
+  --cor-branca: #E9EAEC;
+  --cor-escura: #272D40;
+  --cor-escura-clara: #F2F5FF;
+  --fonte-corpo: 'Poppins', sans-serif;
+  --tamanho-fonte-h1: 1.5rem;
+  --tamanho-fonte-h2: 1.25rem;
+  --tamanho-fonte-normal: 1rem;
+  --tamanho-fonte-pequeno: .875rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-corpo);
+  font-size: var(--tamanho-fonte-normal);
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-escura-clara);
+}
+
+.card {
+  width: 320px;
+  height: 400px;
+  background-color: var(--cor-escura);
+  border-radius: 1rem;
+  padding: 4rem 2rem 0;
+  color: var(--cor-branca);
+  overflow-y: hidden;
+}
+
+.card__img {
+  position: absolute;
+  width: 260px;
+  filter: drop-shadow(5px 10px 15px rgba(8,9,13,.4));
+}
+
+.card__data {
+  transform: translateY(13.2rem);
+  text-align: center;
+}
+
+.card__title {
+  font-size: var(--tamanho-fonte-h1);
+  color: var(--cor-principal);
+  margin-bottom: .5rem; 
+}
+
+.card__preco {
+  display: inline-block;
+  font-size: var(--tamanho-fonte-h2);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.card__descricao {
+  font-size: var(--tamanho-fonte-pequeno);
+  text-align: initial;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+}
+
+.card__botao {
+  display: block;
+  width: max-content;
+  padding: 1.125rem 2rem;
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
+  border-radius: .5rem;
+  font-weight: 600;
+  transition: .2s;
+  opacity: 0;
+}
+
+.card__botao:hover {
+  box-shadow: 0 18px 40px -12px rgba(242,162,12,.35);
+}
+
+.card__img, 
+.card__data, 
+.card__title, 
+.card__preco, 
+.card__descricao {
+  transition: .5s;
+}
+
+.card:hover .card__img {
+  transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+}
+
+.card:hover .card__data {
+  transform: translateY(4.8rem);
+}
+
+.card:hover .card__title {
+  transform: translateX(-2.3rem);
+  margin-bottom: 0;
+}
+
+.card:hover .card__preco {
+  transform: translateX(-6.5rem);
+  
+}
+
+.card:hover .card__descricao, 
+.card:hover .card__botao {
+  transition-delay: .2s;
+  opacity: 1;
+}

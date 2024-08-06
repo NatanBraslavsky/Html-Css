@@ -1,0 +1,107 @@
+#red{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+#blue{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+#container{
+    background-color: aqua;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#left{
+    width: 50%;
+    float: left;
+    background-color: lightblue;
+}
+
+#right{
+    width: 50%;
+    float: right;
+    background-color: brown;
+    
+} 
+
+
+
+ .a{
+    background-color: aquamarine;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 100px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.b{
+    background-color: red;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px; 
+} 
+
+
+
+ .container{
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    overflow: auto;
+    border: 1px solid black;
+    border-radius: 5%;
+
+}
+.conteudo{
+    width: 300px;
+} 
+
+
+
+ .block{
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.inline{
+    display: inline;
+    background-color: violet;
+    margin-right: 10px;
+}
+
+.inline-block{
+    display: inline-block;
+    background-color: orange;
+    width: 100px;
+    height: 50px;
+}
+
+
+
+/* .container{
+    display: flex;
+    padding: 10px;
+    background-color: rgb(34, 30, 30);
+    justify-content: space-between;
+}
+
+.item{
+
+    background-color: rgb(85, 85, 218);
+    padding: 10px;
+    text-align: center;
+} */

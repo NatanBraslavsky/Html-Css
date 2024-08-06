@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDE 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="carteiro"></div>
+        <form action="lasalle.py" method="post">
+            <fieldset id="cadastroGeral">
+                <legend  style="margin-bottom: 20px;">Cadastro Geral</legend>
+                <fieldset id="dadosPessoais">
+                    <legend style="margin-bottom: 10px;">Dados pessoais</legend>
+                    <label for="nome" id="nome">Nome completo:</label><br>
+                    <input type="text" name="nome" id="inputNome"/><br>
+                    <label for="profissao" id="profissao">Profissao:</label><br>
+                    <select name="profissao" id="profissaoSelect">
+                        <option value="" disabled selected>Sua profissão</option>
+                        <option value="">Marinheiro</option>
+                        <option value="">Policial</option>
+                        <option value="">Jogador de futebol</option>
+                        <option value="">Outros</option>
+                    </select>
+                </fieldset>
+                <fieldset id="localizacao">
+                    <legend style="margin-bottom: 10px;">Localização</legend>
+                    <label for="email" id="email">E-mail:</label>
+                    <input type="email" name="email" id="emailInput"/><br>
+                    <label for="rua" id="rua">Rua:</label><br>
+                    <input type="text" name="rua" id="ruaInput"/>
+                </fieldset>
+                <fieldset id="faixaEtaria">
+                    <legend style="margin-bottom: 10px;">Faixa etária</legend>
+                    <input type="radio" name="faixa"/>até 20 anos <br>
+                    <input type="radio" name="faixa"/>mais de 20 até 30 anos<br>
+                    <input type="radio" name="faixa"/>mais de 30 até 40 anos<br>
+                    <input type="radio" name="faixa"/>mais de 40 até 50 anos<br>
+                    <input type="radio" name="faixa"/>mais de 50 até 60 anos<br>
+                    <input type="radio" name="faixa"/>mais de 60 anos<br>
+                </fieldset>
+                <fieldset id="esportes">
+                    <legend>Esportes que pratica</legend>
+                    <input type="checkbox"/>Futebol de campo <br>
+                    <input type="checkbox"/>Futebol de salão <br>
+                    <input type="checkbox"/>Futebol society <br>
+                    <input type="checkbox"/>Volley de quadra <br>
+                    <input type="checkbox"/>Volley de praia <br>
+                    <input type="checkbox"/>Natação em piscina <br>
+                    <input type="checkbox"/>Natação em mar aberto <br>
+                </fieldset>
+            </fieldset>
+            <fieldset id="comentario">
+                <legend>Comentario</legend>
+                <p>Mensagem:</p>
+                <textarea name="texto" id="texto"></textarea>
+            </fieldset>
+            <div id="botao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

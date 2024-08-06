@@ -1,0 +1,54 @@
+p{
+    color:#AABBCC;
+    font-family:Calibri;
+    font-size:14pt;
+    font-style:italic;  /*ou oblique*/
+    font-weight:bold;
+    text-align:center;
+    text-decoration:line-through; /*riscado*/
+    text-decoration:underline;
+    text-decoration:overline;
+    text-decoration:underline overline;
+    text-decoration-color:red;
+    text-decoration-style:wavy /*double,dotted,dashed,like solid*/ 
+    }
+  
+  #a{
+    color:pink;
+    font-family:Verdana;
+    font-size:14pt;
+    text-align:right;
+    text-decoration-style:solid
+    }
+  
+  #b{
+    color:blue;
+    font-family:Comic Sans;
+    font-size:24pt;
+    text-align:center;
+    text-decoration-style:wavy
+    }
+  
+  #c{
+    color:red;
+    font-family:Gabriola;
+    font-size:34pt;
+    text-align:justify;
+    text-decoration-style:dotted;
+    text-decoration:overline underline
+    }
+  
+  .txt{
+    font-family:Courrier;
+    color:#FF00FF;
+    text-align:center
+    }
+  
+  body{
+    background-color:#FFDEAD;
+    background-image:url('download.jfif'),url('images.jfif'),url('images\ \(1\).jfif'),url('images\ \(1\).jfif');
+    background-repeat:no-repeat;/*repeat-x / repeat-y*/
+    background-position:left, right, center left, center;
+    background-size:15%; /*contain / cover(pcupa a tela inteira)*/
+    background-attachment:fixed; /*scroll */
+  }

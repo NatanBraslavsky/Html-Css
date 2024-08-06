@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url(imagem/Mountains-trees-lake-nature-landscape_1920x1200.jpg);
+    height: 800px;
+    
+} /*selecionar o primeiro elemento que tenha a tag section */
+
+section:nth-of-type(3){
+    background-image: url(imagem/panoramica-rio-janeiro-brasil.webp);
+    height: 800px;
+}
+
+section:nth-of-type(5){
+    background-image: url(imagem/beautiful_scenery_mountains-HD_Photo_Wallpaper_1366x768.jpg);
+    height: 800px;    
+}
+
+section:nth-of-type(7){
+    background-image: url(imagem/new\ y.jpg);
+    height: 800px;         
+}
+
+section:nth-of-type(2){
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+.lorem{
+   text-align: center justify;
+   font-weight: 400;
+   padding: 50px;
+   font-size: 16px;
+   padding-left: 90px;
+   padding-right: 90px;
+}
+
+span{
+     font-size: 2em;
+     font-weight: 700;
+     margin-top: 70px;
+     display: block;
+}
+
+section:nth-of-type(4){
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+section:nth-of-type(6){
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+section:nth-of-type(8){
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+  
+

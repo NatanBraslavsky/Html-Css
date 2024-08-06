@@ -1,0 +1,298 @@
+/*.item1{
+	width:100px;
+	height:100px;
+	background:#AABB00;
+	margin:10px
+}
+
+.transitionSize{
+	transition:transform 0.3s
+}
+
+.transitionSize:hover{
+	transform:scale(1.2)
+}
+/* -----------------------------------------------------------------
+
+.item2{
+	width:100px;
+	height:100px;
+	background:#FF00FF;
+	margin:10px
+}
+
+.transitionDelay{
+	transition: width 1s 0.5s,height 0.5s 0s/* primeiro valor tempo de duração
+	o segundo valor tempo de atraso
+}
+
+.transitionDelay:hover{
+	width:200px;
+	height:200px;
+}
+
+/*-------------------------------------------------------------------
+.transitionCheckbox{
+	width:25px;
+	height:25px;
+	transition:transform 0.3s;
+	margin-top:30px;
+}
+
+.transitionCheckbox:checked{
+	transform:rotateY(180deg);
+	}
+	
+/*--------------------------------------------------------------------
+
+.transitionRadio{
+	width:30px;
+	height:30px;
+	transition:transform 0.2s;
+	margin-top:50px;
+}
+
+.transitionRadio:checked{
+	transform:scale(-2)
+}
+
+/*--------------------------------------------------------------------
+
+button{
+	background:blue;
+	color:white;
+	padding:10px;
+	border:none;
+	transition:background 0.5s,color 0.5s,padding 0.5s,border 0.5s
+}
+
+button:hover{
+	background:red;
+	color:black;
+	padding:20px;
+	border:2px solid black;
+	transform:rotateZ(180deg)
+}
+
+/*----------------------------------------------------------------
+
+.image-container{
+	position:relative
+}
+
+.imagem{
+	transition:transform 0.3s
+}
+
+.imagem:hover{
+	/*transform:rotateZ(360deg)
+	transform:scale(1.2)
+	transform:translateX(50px) rotateZ(45deg) scaleY(1.5)
+	/*move,roda e aumenta
+}
+
+
+
+.link{
+	display:inline-block;
+	padding:10px 20px;
+	background:#007BFF;
+	color:white;
+	border-radius:5px;
+	text-decoration:none;
+	transition:transform 0.2s ease-in-outline
+}
+
+.link:hover{
+	transform:translateZ(-50%)
+}
+
+/*Menu na vertical --------------------------------------------------
+nav{
+	background:#333;
+	width:10%
+}
+
+nav ul{
+	list-style:none;
+	margin:0px;
+	padding:0px
+}
+
+nav ul li{
+	display:flex
+}
+
+nav ul li a{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	padding:10px 20px
+}
+
+nav ul li a:hover{
+	background:#CECECE;
+	width:100%
+}
+
+nav ul li img{
+	width:40px;
+	height:40px;
+	margin-right:5px
+}
+
+/*Menu na horizontal --------------------------------------------------	
+
+nav{
+	background:#333;
+	width:50%
+}
+
+nav ul li img{
+	width:40px;
+	height:40px;
+	margin-right:5px
+}
+
+nav ul{
+	list-style:none;
+	margin:5px;
+	padding:5px
+}
+
+nav ul li{
+	display:inline-block
+}
+
+nav ul li a{
+	display:inline-block;
+	color:#FFF;
+	text-decoration:none;
+	padding:10px 20px
+}
+
+nav ul li a:hover{
+	background:yellow;
+	color:blue;
+	padding:10px 20px
+}
+
+/*------------------------------------------------------------------*/
+
+body{
+	font-family:Arial;
+	padding:0px;
+	margin:0px
+}
+
+header{
+	background:#333;
+	color:#FFF;
+	padding:10px
+}
+
+header h1{
+		margin:0px
+}
+
+nav ul{
+	padding:0px;
+	margin:0px;
+	list-style:none;
+	text-align:center
+}
+
+nav li{
+	display:inline-block;
+	margin-right:10px
+}
+
+nav a{
+	color:#FFF;
+	text-decoration:none
+}
+
+section{
+	padding:190px
+}
+
+footer{
+	background:#333;
+	color:#FFF;
+	padding:10px;
+	text-align:center
+}
+
+/*media queries para diferentes tamanhos de tela */
+
+@media(max-width:600px){
+	header{
+		padding:5px
+	}
+	
+	nav ul{
+		display:block;
+		text-align:center
+	}
+	
+	nav li{
+		display:block;
+		margin:5px 0px
+	}
+	
+	section{
+		padding:10px
+	}
+	
+	footer{
+		padding:5px
+	}
+}
+
+@media(min-width:601px) and (max-width:1024px){
+	header{
+		padding:15px
+	}
+	
+	nav ul{
+		display:flex;
+		text-align:center
+	}
+	
+	nav li{
+		margin:5px 0px
+	}
+	
+	section{
+		padding:30px
+	}
+	
+	footer{
+		padding:15px
+	}
+}
+
+/*estilo para telas maiores que 1024*/
+
+@media(min-width:1025px){
+	header{
+		padding:20px
+	}
+	
+	nav ul{
+		display:flex;
+		justify-content:flex-end
+	}
+	
+	nav li{
+		margin:0px 15px
+	}
+	
+	section{
+		padding:50px
+	}
+	
+	footer{
+		padding:20px
+	}
+}
