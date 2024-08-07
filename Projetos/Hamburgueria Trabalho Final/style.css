@@ -602,6 +602,9 @@ header {
     .containerMaisVendidos{
         width: 340px;
     }
+    .produto5{
+        background-position: center;
+    }
 }
 
 .produto1{
