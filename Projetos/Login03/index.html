@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form in HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <form action="lasalle.py" method="post">
+                <h1 id="txtLogin">Login</h1>
+                <div class="contInput cont1i">
+                    <input type="text" name="user" id="user" placeholder="Username" maxlength="20"><i class='bx bxs-user'></i>
+                </div>
+                <div class="contInput">
+                    <input type="password" name="pass" id="pass" placeholder="Password" maxlength="20"><i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="conttxt">
+                    <div id="rem">
+                        <input type="checkbox" name="check" id="check">Remember me
+                    </div>
+                    <div id="for">
+                        <a href="">Forgot Password?</a>
+                    </div>
+                </div>
+                <input type="button" value="Login" id="loginButton">
+                <p id="dont">Don't have on account? <a href="#">Remember</a></p>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
