@@ -8,7 +8,7 @@
 
 body{
     background-image: url(home.jpg);
-    background-size: cover;
+    background-size: cover cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
