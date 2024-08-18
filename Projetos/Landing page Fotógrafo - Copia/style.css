@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.containerHeader {
+    max-width: 2000px;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    position: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 1.1em;
+    padding: 40px;
+    margin-left: 100px;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 300px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+a {
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.redeSocialLogo {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.insta, .what {
+    width: 30px;
+    height: 30px;
+}
+
+.insta i, .what i {
+    font-size: 30px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media(max-width: 1200px){
+    .logo{
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 1050px) {
+    nav {
+        right: 200px;
+    }
+
+    .redeSocialLogo {
+        right: 20px;
+    }
+}
+
+@media(max-width: 950px) {
+    nav {
+        right: 150px;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+@media(max-width: 850px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav.active {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .redeSocialLogo {
+        right: 100px;
+    }
+
+    .menu-icon {
+        right: 20px;
+    }
+}
+@media(max-width:500px){
+    .redeSocialLogo{
+        display: none;
+    }
+    .logo{
+        width: 260px;
+        font-size: 0.9em;
+    }
+}

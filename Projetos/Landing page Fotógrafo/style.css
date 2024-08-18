@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.containerHeader{
+    max-width: 2000px;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    position: fixed;
+    outline: 1px solid black;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo{
+    font-size: 1.1em;
+    padding: 40px;
+    margin-left: 50px;
+    outline: 1px solid black;
+}
+
+nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 300px;
+    font-size: 1.2em;
+    outline: 1px solid black;
+}
+
+a{
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.redeSocialLogo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: 1px solid black;
+}
+
+.insta{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.what{
+    width: 25px;
+    height: 25px;
+}
+
+.insta i{
+    font-size: 25px;
+}
+
+.what i{
+    font-size: 25px;
+}
+
+@media(max-width:1000px){
+
+    nav{
+        right: 200px;
+    }
+
+    .redeSocialLogo{
+        right: 20px;
+    }
+}
+
+@media(max-width:900px){
+    nav{
+        right: 150px;
+    }
+}
