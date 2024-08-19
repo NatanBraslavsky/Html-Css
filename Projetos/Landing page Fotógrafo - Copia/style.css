@@ -23,7 +23,7 @@ header {
 
 .logo {
     font-size: 1.1em;
-    padding: 40px;
+    padding: 50px;
     margin-left: 100px;
 }
 
@@ -91,7 +91,7 @@ nav ul {
     }
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 1090px) {
     nav {
         right: 200px;
     }
@@ -101,7 +101,7 @@ nav ul {
     }
 }
 
-@media(max-width: 950px) {
+@media(max-width: 990px) {
     nav {
         right: 150px;
     }
@@ -110,17 +110,16 @@ nav ul {
     }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 890px) {
     .menu-icon {
         display: block;
     }
 
     nav {
         position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background-color: #fff;
+        top: 110px;
+        right: -5px;
+        background-color: #9cebb8;
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
@@ -147,13 +146,13 @@ nav ul {
         right: 20px;
     }
 }
-@media(max-width:500px){
+@media(max-width:540px){
     .redeSocialLogo{
         display: none;
     }
     .logo{
         width: 260px;
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 }
 
@@ -184,7 +183,7 @@ section{
 }
 
 .containerTextoSection{
-    width: 60%;
+    width: 55%;
     height: 700px;
     display: flex;
     align-items: center;
@@ -216,7 +215,7 @@ section{
     }
     
     input:hover{
-        background-color: rgb(173, 171, 255);
+        background-color: #9cebb8;
         color: black;
         font-weight: bold;
         cursor: pointer;
@@ -229,13 +228,13 @@ section{
     }
 }
 
-@media (max-width: 1250px){
+@media (max-width: 1280px){
     .containerCentralTexto h1{
         font-size: 6em;
     }
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1100px){
     .containerSectionCentral{
         background-size: 350px;
     }
