@@ -14,7 +14,6 @@
     width: 100vw;
     display: flex;
     position: relative;
-    position: fixed;
 }
 
 header {
@@ -154,5 +153,118 @@ nav ul {
     .logo{
         width: 260px;
         font-size: 0.9em;
+    }
+}
+
+section{
+    max-width: 1400px;
+    margin: auto; 
+}
+
+.containerSectionCentral{
+    width: 100%;
+    height: 750px;
+    /* outline: 1px solid black; */
+    background-image: url(Imagens/17594393-projeto-de-ilustracao-do-fotografo-vetor.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 500px;
+}
+
+.containerTextoSection{
+    width: 60%;
+    /* outline: 1px solid black; */
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.containerCentralTexto{
+    /* outline: 1px solid black; */
+    h1{
+        font-size: 7em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+    p{
+        font-size: 2em;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    input{
+        width: 150px;
+        height: 60px;
+        background: black;
+        color: white;
+        font-size: 1.05em;
+        margin-top: 40px;
+        transition: background 0.3s ease;
+        border: 0px;
+    }
+    
+    input:hover{
+        background-color: rgb(0, 180, 87);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:1350px){
+    .containerSectionCentral{
+        background-size: 400px;
+    }
+}
+
+@media (max-width: 1250px){
+    .containerCentralTexto h1{
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 1050px){
+    .containerSectionCentral{
+        background-size: 350px;
+    }
+    .containerTextoSection{
+        width: 65%;
+    }
+}
+
+@media(max-width:985px){
+    .containerTextoSection{
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+    }
+    .containerSectionCentral{
+        background-position: bottom;
+        height: 1000px;
+    }
+}
+
+@media(max-width:660px){
+    .containerCentralTexto h1{
+        font-size: 5em;
+    }
+}
+
+@media(max-width:560px){
+    .containerCentralTexto h1{
+        font-size: 4em;
+    }
+}
+
+@media(max-width:450px){
+    .containerCentralTexto h1{
+        font-size: 3.5em;
+    }
+}
+
+@media(max-width:400px){
+    .containerCentralTexto h1{
+        font-size: 3em;
     }
 }
