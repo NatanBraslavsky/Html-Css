@@ -160,6 +160,18 @@ nav ul {
 section{
     max-width: 1400px;
     margin: auto; 
+    position: relative;
+}
+
+.circuloPreto{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50px;
+    left: 250px;
 }
 
 .containerSectionCentral{
@@ -204,7 +216,7 @@ section{
     }
     
     input:hover{
-        background-color: rgb(0, 180, 87);
+        background-color: rgb(173, 171, 255);
         color: black;
         font-weight: bold;
         cursor: pointer;
