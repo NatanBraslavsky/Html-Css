@@ -30,13 +30,7 @@ header {
 }
 
 .logo h1{
-    position: relative;
     font-family: "Libre Baskerville", serif;
-}
-
-#cam{
-    position: absolute;
-    bottom: 5px;
 }
 
 nav {
