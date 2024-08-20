@@ -41,7 +41,7 @@ nav {
     transform: translate(0%, -50%);
     right: 300px;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 200;
     transition: transform 0.3s ease;
 }
 
