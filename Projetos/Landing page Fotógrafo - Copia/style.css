@@ -150,7 +150,7 @@ nav ul {
     }
 
     nav a{
-        width: 100%;
+        width: 90%;
     }
 
     nav a:hover {
@@ -168,7 +168,7 @@ nav ul {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: transform 0.8s ease, opacity 0.8s ease, visibility 0.8s ease 0.8s;
+        transition: transform 2s ease, opacity 0.3s ease, visibility 0.3s ease 0.3s;
     }
 
 
