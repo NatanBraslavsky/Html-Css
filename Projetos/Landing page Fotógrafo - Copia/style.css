@@ -11,7 +11,7 @@
 }
 
 .containerHeader {
-    max-width: 2000px;
+    max-width: 1600px;
     width: 100vw;
     display: flex;
     position: relative;
@@ -30,7 +30,7 @@ header {
 }
 
 .logo h1{
-    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
 }
 
 nav {
