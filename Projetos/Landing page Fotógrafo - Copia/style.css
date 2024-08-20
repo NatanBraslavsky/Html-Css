@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
     margin: 0;
@@ -19,12 +20,17 @@
 header {
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
 }
 
 .logo {
-    font-size: 1.1em;
-    padding: 50px;
+    font-size: 1.2em;
+    padding: 40px;
     margin-left: 100px;
+}
+
+.logo h1{
+    font-family: "Libre Baskerville", serif;
 }
 
 nav {
@@ -35,7 +41,7 @@ nav {
     transform: translate(0%, -50%);
     right: 300px;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 200;
     transition: transform 0.3s ease;
 }
 
@@ -91,7 +97,7 @@ nav ul {
     }
 }
 
-@media(max-width: 1090px) {
+@media(max-width: 1130px) {
     nav {
         right: 200px;
     }
@@ -101,7 +107,7 @@ nav ul {
     }
 }
 
-@media(max-width: 990px) {
+@media(max-width: 1050px) {
     nav {
         right: 150px;
     }
@@ -110,7 +116,7 @@ nav ul {
     }
 }
 
-@media(max-width: 890px) {
+@media(max-width: 930px) {
     .menu-icon {
         display: block;
     }
@@ -180,7 +186,7 @@ nav ul {
         right: 20px;
     }
 }
-@media(max-width:540px){
+@media(max-width:590px){
     .redeSocialLogo{
         display: none;
     }
@@ -188,23 +194,16 @@ nav ul {
         width: 260px;
         font-size: 1.1em;
     }
+
+    #cam{
+        margin-top: 0px;
+    }
 }
 
 section{
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto; 
     position: relative;
-}
-
-.circuloPreto{
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    border: none;
-    position: absolute;
-    top: 50px;
-    left: 250px;
 }
 
 .containerSectionCentral{
@@ -213,12 +212,12 @@ section{
     background-image: url(Imagens/17594393-projeto-de-ilustracao-do-fotografo-vetor.jpg);
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: 500px;
+    background-size: 450px;
 }
 
 .containerTextoSection{
     width: 55%;
-    height: 700px;
+    height: 630px;
     display: flex;
     align-items: center;
     justify-content: end;
