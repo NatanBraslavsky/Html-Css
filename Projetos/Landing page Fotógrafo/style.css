@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,29 +10,30 @@
     text-decoration: none;
 }
 
-.containerHeader{
-    max-width: 2000px;
+.containerHeader {
+    max-width: 1600px;
     width: 100vw;
     display: flex;
     position: relative;
-    position: fixed;
-    outline: 1px solid black;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
 }
 
-
-.logo{
-    font-size: 1.1em;
+.logo {
+    font-size: 1.2em;
     padding: 40px;
-    margin-left: 50px;
-    outline: 1px solid black;
+    margin-left: 100px;
 }
 
-nav{
+.logo h1{
+    font-weight: 400;
+}
+
+nav {
     position: absolute;
     display: flex;
     align-items: center;
@@ -39,15 +41,16 @@ nav{
     transform: translate(0%, -50%);
     right: 300px;
     font-size: 1.2em;
-    outline: 1px solid black;
+    font-weight: 200;
+    transition: transform 0.3s ease;
 }
 
-a{
+a {
     color: black;
     transition: transform 0.3s ease;
 }
 
-a:hover{
+a:hover {
     transform: scale(1.1);
 }
 
@@ -56,8 +59,9 @@ nav ul {
     gap: 40px;
 }
 
-.redeSocialLogo{
+.redeSocialLogo {
     width: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,41 +70,265 @@ nav ul {
     right: 100px;
     top: 50%;
     transform: translateY(-50%);
-    outline: 1px solid black;
 }
 
-.insta{
-    width: 25px;
-    height: 25px;
-    
+.insta, .what {
+    width: 30px;
+    height: 30px;
 }
 
-.what{
-    width: 25px;
-    height: 25px;
+.insta i, .what i {
+    font-size: 30px;
 }
 
-.insta i{
-    font-size: 25px;
+.menu-icon {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.what i{
-    font-size: 25px;
+@media(max-width: 1200px){
+    .logo{
+        margin-left: 50px;
+    }
 }
 
-@media(max-width:1000px){
-
-    nav{
+@media(max-width: 1130px) {
+    nav {
         right: 200px;
     }
 
-    .redeSocialLogo{
+    .redeSocialLogo {
         right: 20px;
     }
 }
 
-@media(max-width:900px){
-    nav{
+@media(max-width: 1050px) {
+    nav {
         right: 150px;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+
+@media(max-width: 930px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        position: absolute;
+        top: 140px;
+        right: 0;
+        background-color: #ffffff;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.6s ease, opacity 0.3s ease;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 35px;
+        padding: 20px;
+    }
+    nav ul li{
+        border-bottom: 2px solid rgb(0, 0, 0, 0.3);
+    }
+
+    nav ul{
+        width: 100vw;
+    }
+
+    nav a{
+        width: 90%;
+    }
+
+    nav a:hover {
+        transform: scale(1.05);
+    }
+
+
+    nav.active {
+        transform: translateY(0%);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav:not(.active) {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 2s ease, opacity 0.3s ease, visibility 0.3s ease 0.3s;
+    }
+
+
+    .redeSocialLogo {
+        right: 100px;
+    }
+
+    .menu-icon {
+        right: 20px;
+    }
+}
+@media(max-width:590px){
+    .redeSocialLogo{
+        display: none;
+    }
+    .logo{
+        width: 260px;
+        font-size: 1.1em;
+    }
+
+    #cam{
+        margin-top: 0px;
+    }
+}
+
+section{
+    max-width: 1300px;
+    margin: auto; 
+    position: relative;
+}
+
+.containerSectionCentral{
+    width: 100%;
+    height: 750px;
+    background-image: url(Imagens/17594393-projeto-de-ilustracao-do-fotografo-vetor.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 450px;
+}
+
+.containerTextoSection{
+    width: 55%;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.containerCentralTexto{
+    h1{
+        font-size: 7em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        letter-spacing: 0.1px;
+    }
+    p{
+        font-size: 2em;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    input{
+        width: 150px;
+        height: 60px;
+        background: black;
+        color: white;
+        font-size: 1.05em;
+        margin-top: 40px;
+        transition: background 0.3s ease;
+        border: 0px;
+        
+    }
+    
+    input:hover{
+        background-color: #9cebb8;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:1350px){
+    .containerSectionCentral{
+        background-size: 400px;
+    }
+}
+
+@media (max-width: 1280px){
+    .containerCentralTexto h1{
+        font-size: 6em;
+    }
+}
+
+@media (max-width: 1100px){
+    .containerSectionCentral{
+        background-size: 350px;
+    }
+    .containerTextoSection{
+        width: 65%;
+    }
+}
+
+@media(max-width:985px){
+    .containerTextoSection{
+        width: 100%;
+        height: 500px;
+        justify-content: center;
+    }
+    .containerSectionCentral{
+        background-position: bottom;
+        height: 1050px;
+    }
+}
+
+@media(max-width:660px){
+    .containerCentralTexto h1{
+        font-size: 5em;
+    }
+    .containerCentralTexto p{
+        text-align: center;
+    }
+    .containerCentralTexto input{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .containerCentralTexto h1{
+        text-align: center;
+    }
+}
+
+@media(max-width:560px){
+    .containerCentralTexto h1{
+        font-size: 4em;
+    }
+    .containerTextoSection{
+        height: 400px;
+    }
+    .containerSectionCentral{
+        height: 950px;
+    }
+}
+
+@media(max-width:450px){
+    .containerCentralTexto h1{
+        font-size: 3.5em;
+    }
+    .containerSectionCentral{
+        background-size: 280px;
+        height: 830px;
+    }
+}
+
+@media(max-width:400px){
+    .containerCentralTexto h1{
+        font-size: 3em;
     }
 }
