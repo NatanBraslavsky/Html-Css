@@ -282,7 +282,7 @@ header {
 
 
 .imagemMenu1:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .imagemMenu2{
@@ -292,7 +292,7 @@ header {
 }
 
 .imagemMenu2:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .imagemMenu3{
@@ -301,7 +301,7 @@ header {
 }
 
 .imagemMenu3:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .imagemMenu4{
@@ -311,7 +311,7 @@ header {
 }
 
 .imagemMenu4:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .imagemMenu5{
@@ -321,7 +321,7 @@ header {
 }
 
 .imagemMenu5:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .imagemMenu6{
@@ -330,7 +330,7 @@ header {
 }
 
 .imagemMenu6:hover{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 @media(max-width:1250px){
