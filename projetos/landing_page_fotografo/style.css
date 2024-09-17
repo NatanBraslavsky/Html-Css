@@ -12,7 +12,7 @@
 
 .containerHeaderSection{
     max-width: fit-content;
-    height: 1100px;
+    height: 1000px;
     margin: auto;
     background: linear-gradient(to right, 
     white 0%, 
@@ -34,7 +34,6 @@
 header {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -93,6 +92,14 @@ nav ul {
 
 .insta i, .what i {
     font-size: 30px;
+    color: #424542;
+}
+
+.insta i:hover{
+    color: #DC385B;
+}
+.what i:hover{
+    color: #00BD07;
 }
 
 .menu-icon {
@@ -273,6 +280,10 @@ section{
     .containerSectionCentral{
         background-size: 400px;
     }
+    .containerHeaderSection{
+        height: 900px;
+    }
+
 }
 
 @media (max-width: 1280px){
@@ -299,6 +310,19 @@ section{
     .containerSectionCentral{
         background-position: bottom;
         height: 1050px;
+    }
+    .containerHeaderSection{
+        max-width: fit-content;
+        height: 1100px;
+        margin: auto;
+        background: linear-gradient(to bottom, 
+        white 0%, 
+        white 50%, 
+        #abbbc762 50.6%, 
+        #abbbc762 95%, 
+        white 95.6%, 
+        white 100%);
+        background-size: 100% 100%; /* Preenche toda a tela */
     }
 }
 
