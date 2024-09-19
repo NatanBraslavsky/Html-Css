@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fontMain: "Poppins", system-ui;
+
+    --colorMain: #E33D08;
+    --colorGreen: #044040;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontMain);
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#inum{
+    width: 165px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+}
+
+.containerCardUno{
+    width: 270px;
+    height: 400px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    background: url(imagens/coringas-uno.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#nome{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    width: 120px;
+    height: 30px;
+    font-size: 1.8rem;
+    top: 45px;
+    position: absolute;
+    right: 38px;
+    z-index: 1;
+    border: none;
+}
+
+#nome:focus{
+    border: none;
+}
+
+#pontuacao{
+    width: 50px;
+    color: white;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 75px;
+    right: 105px;
+    z-index: 1;
+}
+
+#inum{
+    position: absolute;
+    top: 105px;
+    left: 35px;
+}
+
+#inum::placeholder{
+    color: rgba(255, 255, 255, 0.324);
+}
+
+.bx{
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    top: 106px;
+    right: 44px;
+    transition: 0.3s;
+}
+
+.bx:hover{
+    transform: scale(1.075);
+}
+
+#rodadas{
+    color: white;
+    position: absolute;
+    font-size: 12px;
+    top: 150px;
+    left: 50px;
+}
